@@ -1,0 +1,28 @@
+{
+  "name": "has-object-spread",
+  "description": "check if the environment supports { ...a } spread syntax",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/has-object-spread/issues"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/has-object-spread",
+  "keywords": [
+    "detect",
+    "es6",
+    "object-spread"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/has-object-spread.git"
+  },
+  "scripts": {
+    "test": "standard && node test.js"
+  }
+}
