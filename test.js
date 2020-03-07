@@ -2,6 +2,7 @@ var test = require('tape')
 var hasObjectSpread = require('./')
 
 var skip = hasObjectSpread()
+// eslint-disable-next-line no-new-func
 function trySpread () { Function('({ ...x })') }
 
 test('has object spread', { skip: !skip }, function (t) {
