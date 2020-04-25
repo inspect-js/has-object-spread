@@ -1,28 +1,30 @@
 {
-  "name": "has-object-spread",
-  "description": "check if the environment supports { ...a } spread syntax",
-  "version": "1.0.0",
-  "author": "Renée Kooi <renee@kooi.me>",
-  "bugs": {
-    "url": "https://github.com/goto-bus-stop/has-object-spread/issues"
-  },
-  "devDependencies": {
-    "standard": "^14.3.3",
-    "tape": "^5.0.0"
-  },
-  "homepage": "https://github.com/goto-bus-stop/has-object-spread",
-  "keywords": [
-    "detect",
-    "es6",
-    "object-spread"
-  ],
-  "license": "Apache-2.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/goto-bus-stop/has-object-spread.git"
-  },
-  "scripts": {
-    "test": "standard && node test.js"
-  }
+	"name": "has-object-spread",
+	"description": "check if the environment supports { ...a } spread syntax",
+	"version": "1.0.0",
+	"author": "Renée Kooi <renee@kooi.me>",
+	"bugs": {
+		"url": "https://github.com/goto-bus-stop/has-object-spread/issues"
+	},
+	"devDependencies": {
+		"@ljharb/eslint-config": "^16.0.0",
+		"eslint": "^6.8.0",
+		"tape": "^5.0.0"
+	},
+	"homepage": "https://github.com/goto-bus-stop/has-object-spread",
+	"keywords": [
+		"detect",
+		"es6",
+		"object-spread"
+	],
+	"license": "Apache-2.0",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goto-bus-stop/has-object-spread.git"
+	},
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "node test"
+	}
 }
