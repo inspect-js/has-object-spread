@@ -28,6 +28,6 @@
 		"pretest": "eslint .",
 		"tests-only": "node test",
 		"test": "npm run tests-only",
-		"posttest": "npx aud"
+		"posttest": "npx aud --production"
 	}
 }
