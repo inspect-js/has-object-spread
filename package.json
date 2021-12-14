@@ -6,14 +6,6 @@
 	"bugs": {
 		"url": "https://github.com/goto-bus-stop/has-object-spread/issues"
 	},
-	"devDependencies": {
-		"@ljharb/eslint-config": "^17.3.0",
-		"aud": "^1.1.3",
-		"eslint": "^7.15.0",
-		"nyc": "^10.3.2",
-		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.0.1"
-	},
 	"homepage": "https://github.com/goto-bus-stop/has-object-spread",
 	"keywords": [
 		"detect",
@@ -27,11 +19,20 @@
 		"url": "https://github.com/goto-bus-stop/has-object-spread.git"
 	},
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublishOnly": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"pretest": "npm run lint",
 		"lint": "eslint --ext=js,mjs .",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
 		"posttest": "aud --production"
+	},
+	"devDependencies": {
+		"@ljharb/eslint-config": "^20.0.0",
+		"aud": "^1.1.5",
+		"eslint": "^8.4.1",
+		"nyc": "^10.3.2",
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^5.3.2"
 	}
 }
